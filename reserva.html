@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservas</title>
+</head>
+<body>
+    <section>
+        <form action="action_page.php" method="get" autocomplete="on">
+            <fieldset>
+            <legend>Informações pessoais</legend>
+                <table cellspacing="20" border="0">
+                    <tr>
+                        <td>
+                            <label for="nome">Nome:</label>
+                        </td>
+                        <td>    
+                            <input type="text" required id="nome" name="nome" value="" placeholder="Digite seu nome aqui.">
+                        </td>
+                    </tr>
+                    <tr>    
+                        <td>    
+                            <label for="email">Email:</label>
+                        </td>
+                        <td>
+                            <input type="email" required name="email" value="" placeholder="Digite seu email aqui.">
+                        </td>
+                    </tr>        
+                    <tr>    
+                        <td>    
+                            <label for="telefone">Telefone:</label>
+                        </td>
+                        <td>
+                            <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000">
+                        </td>
+                    </tr>        
+                </table>
+            </fieldset>
+            <fieldset>
+            <legend>Serviços disponíveis</legend>
+                
+                <input type="checkbox" id="passagens" name="servicos" value="Passagens Aéreas">
+                <label for="passagens">Passagens Aéreas</label> <br>
+
+                <input type="checkbox" id="reservahotel" name="servicos"> 
+                <label for="reservahotel">Reserva de Hotéis</label> <br>
+
+                <input type="checkbox" id="aluguelveiculo" name="servicos"> 
+                <label for="aluguelveiculo">Aluguel de Veículos</label> <br>
+            </fieldset>
+            <fieldset>
+            <legend>Formas de Pagamento</legend>
+                <input type="radio" id="credito" name="pagamento" value="Cartão de Crédito">
+                <label for="credito">Cartão de Crédito</label><br>
+
+                <input type="radio" id="debito" name="pagamento" value="Cartão de Débito">
+                <label for="debito">Cartão de Débito</label><br>
+
+                <input type="radio" id="boleto" name="pagamento" value="Boleto">
+                <label for="boleto">Boleto</label><br>
+
+                <input type="radio" id="pix" name="pagamento" value="Pix">
+                <label for="pix">Pix</label><br>
+                <br>
+                <select name="pagamento" id="parcelamento">
+                    <option value="" disabled selected>Escolha a forma de parcelamento.</option>
+                    <option value="avista">À vista</option>
+                    <option value="5vezes">Em 5x sem juros</option>
+                    <option value="10vezes">Em 10x com juros</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend>Informações adicionais</legend>
+                <textarea name="observacoes" rows="10" cols="45"  placeholder="Insira aqui informações que considera importantes."></textarea>
+            </fieldset>
+            <br>
+            <input type="checkbox" id="newsletter" name="newsletter"> 
+            <label for="newsletter">Deseja receber nossas propagandas chatas que só servem pra encher a sua caixa de entrada? </label><br><br>
+            <input type="submit" name="pacote" value="Enviar">    
+        </form>
+    </section> 
+</body>
+</html>

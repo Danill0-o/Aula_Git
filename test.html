@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Exemplo de Checkbox</title>
+  <style>
+    /* Estilo para as opções ocultas */
+    .opcoes-ocultas {
+      display: none;
+    }
+
+    /* Estilo para as opções visíveis quando o checkbox está selecionado */
+    #teste:checked + .opcoes-ocultas {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <label>
+    <input type="checkbox" id="teste"> Mostrar mais opções
+  </label>
+
+  <div class="opcoes-ocultas">
+    <!-- Coloque aqui as opções adicionais que deseja mostrar quando o checkbox estiver selecionado -->
+    <p>Opção 1</p>
+    <p>Opção 2</p>
+    <p>Opção 3</p>
+  </div>
+</body>
+</html>
